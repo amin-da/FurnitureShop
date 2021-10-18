@@ -1,19 +1,9 @@
 /* Fonts */
 @font-face {
   font-family: "Sahel";
-  src: url("../fonts/Sahel.woff") format("woff");
-}
-/* Varibale */
-:root {
-  --green: #27ae60;
-  --dark-color: #219150;
-  --light-color: #666;
-  --black: #444;
-  --border: 0.1rem solid rgba(0, 0, 0, 0.1);
-  --border-hover: 0.1rem solid var(--black);
-  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
-}
+  src: url("../fonts/Sahel.woff") format("woff"); }
 
+/* Varibale */
 /* basic style */
 * {
   font-family: "Sahel", sans-serif;
@@ -24,25 +14,20 @@
   border: none;
   text-decoration: none;
   text-transform: capitalize;
-  transition: all 0.2s linear;
-  transition: width none;
-}
+  transition: all 0.2s linear; }
 
 html {
   font-size: 85%;
   overflow-x: hidden;
   scroll-padding-top: 5rem;
-  scroll-behavior: smooth;
-}
+  scroll-behavior: smooth; }
+  html::-webkit-scrollbar {
+    width: 0.8rem; }
+  html::-webkit-scrollbar-track {
+    background: #fff; }
+  html::-webkit-scrollbar-thumb {
+    background: #244d4d;
+    border-radius: 5rem; }
 
-html::-webkit-scrollbar {
-  width: 0.8rem;
-}
-html::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-html::-webkit-scrollbar-thumb {
-  background: var(--black);
-  border-radius: 5rem;
-}
+.header {
+  padding: 2rem 9%; }

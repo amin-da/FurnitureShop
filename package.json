@@ -1,0 +1,24 @@
+{
+  "name": "furnitureshop",
+  "version": "1.0.0",
+  "description": "Responsive Multipage FurnitureShop using Javascripte &amp; Css3 &amp; Html5",
+  "main": "index.js",
+  "scripts": {
+    "css": "node-sass --include-path scss ./css/style.scss ./css/style.css",
+    "watch": "nodemon -e scss -x 'npm run css'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amin-da/FurnitureShop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amin-da/FurnitureShop/issues"
+  },
+  "homepage": "https://github.com/amin-da/FurnitureShop#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.13"
+  }
+}

@@ -1,0 +1,57 @@
+/* Fonts */
+@font-face {
+  font-family: "Sahel";
+  src: url("../fonts/Sahel.woff") format("woff");
+}
+/* Varibale */
+$green: #244d4d;
+$white: #fff;
+$light-color: #779;
+$light-bt: #f6fbf6;
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+$box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+$border: 0.1rem solid $green;
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1rem;
+}
+
+/* basic style */
+* {
+  font-family: "Sahel", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 85%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $green;
+    border-radius: 5rem;
+  }
+}
+
+// header style
+
+.header {
+  padding: 2rem 9%;
+}
