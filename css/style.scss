@@ -7,7 +7,7 @@
 $green: #244d4d;
 $white: #fff;
 $light-color: #779;
-$light-bt: #f6fbf6;
+$light-bg: #f6fbf6;
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 $box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 $border: 0.1rem solid $green;
@@ -51,7 +51,71 @@ html {
 }
 
 // header style
-
 .header {
-  padding: 2rem 9%;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: $light-bg;
+
+  .logo {
+    font-size: 1.7rem;
+    color: $green;
+    font-weight: bolder;
+    i {
+      padding-left: 0.2rem;
+    }
+  }
+
+  .search-form {
+    height: 3rem;
+    width: 40rem;
+    background: $white;
+    border: $border;
+    border-radius: 5rem;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+
+    input {
+      height: 100%;
+      width: 100%;
+      padding: 0rem 1rem;
+      font-size: 1.2rem;
+      color: $green;
+      text-transform: none;
+    }
+
+    label {
+      font-size: 1.8rem;
+      padding-left: 0.8rem;
+      cursor: pointer;
+      color: $green;
+
+      &:hover {
+        color: $light-color;
+      }
+    }
+  }
+
+  .icons div {
+    margin-right: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: $green;
+
+    &:hover {
+      color: $light-color;
+    }
+  }
+}
+
+#search-btn {
+  display: none;
 }
