@@ -80,3 +80,49 @@ html {
 
 #search-btn {
   display: none; }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(360deg);
+    opacity: 0; } }
+
+#closer-btn {
+  position: fixed;
+  cursor: pointer;
+  top: 1rem;
+  left: 0.5rem;
+  font-size: 2.5rem;
+  z-index: 10000;
+  color: #244d4d;
+  animation: rotate 0.4s linear 0.4s backwards;
+  display: none; }
+  #closer-btn:hover {
+    color: #779; }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: fixed;
+  top: 0;
+  left: -110%;
+  width: 25rem;
+  height: 100vh;
+  z-index: 1000;
+  background: #fff;
+  transition: all 0.4s linear; }
+  .navbar.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    transition: all 0.4s linear; }
+  .navbar a {
+    width: 90%;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2rem;
+    color: #244d4d;
+    border-bottom: 0.1rem solid #244d4d; }
+    .navbar a:hover {
+      color: #779; }
