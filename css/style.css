@@ -29,6 +29,18 @@ html {
     background: #244d4d;
     border-radius: 5rem; }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  background: #244d4d;
+  border-radius: 0.3rem;
+  color: #fff;
+  cursor: pointer; }
+  .btn:hover {
+    background: #316868; }
+
 .header {
   direction: rtl;
   display: flex;
@@ -126,3 +138,67 @@ html {
     border-bottom: 0.1rem solid #244d4d; }
     .navbar a:hover {
       color: #779; }
+
+.shopping-cart {
+  direction: rtl;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: -105%;
+  width: 25rem;
+  height: 100vh;
+  z-index: 1000;
+  background: #fff;
+  transition: all 0.4s linear;
+  padding: 2rem;
+  padding-top: 7rem;
+  overflow-y: scroll; }
+  .shopping-cart.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    transition: all 0.4s linear; }
+  .shopping-cart::-webkit-scrollbar {
+    width: 0.8rem; }
+  .shopping-cart::-webkit-scrollbar-track {
+    background: #fff; }
+  .shopping-cart::-webkit-scrollbar-thumb {
+    background: #244d4d;
+    border-radius: 5rem; }
+  .shopping-cart .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    margin-right: 1rem; }
+    .shopping-cart .box .fa-times {
+      position: absolute;
+      top: 50%;
+      right: -0.5rem;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      color: #779;
+      cursor: pointer; }
+      .shopping-cart .box .fa-times:hover {
+        color: #244d4d; }
+    .shopping-cart .box img {
+      height: 8rem; }
+    .shopping-cart .box .content h3 {
+      color: #244d4d;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem; }
+    .shopping-cart .box .content span {
+      font-size: 1.3rem;
+      color: #779; }
+    .shopping-cart .box .content .multiply {
+      margin: 0rem 1rem; }
+  .shopping-cart .total {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #779; }
+    .shopping-cart .total span {
+      color: #244d4d; }
+  .shopping-cart .btn {
+    width: 100%;
+    text-align: center; }

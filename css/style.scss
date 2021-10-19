@@ -9,7 +9,7 @@ $white: #fff;
 $light-color: #779;
 $light-bg: #f6fbf6;
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-$box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+$dark-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
 $border: 0.1rem solid $green;
 
 @mixin grid($val) {
@@ -47,6 +47,21 @@ html {
   &::-webkit-scrollbar-thumb {
     background: $green;
     border-radius: 5rem;
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+  font-size: 1.5rem;
+  background: $green;
+  border-radius: 0.3rem;
+  color: $white;
+  cursor: pointer;
+
+  &:hover {
+    background: #316868;
   }
 }
 
@@ -163,7 +178,7 @@ html {
 
   &.active {
     left: 0;
-    box-shadow: $box-shadow;
+    box-shadow: $dark-shadow;
     transition: all 0.4s linear;
   }
 
@@ -179,5 +194,97 @@ html {
     &:hover {
       color: $light-color;
     }
+  }
+}
+
+// shopping-cart
+.shopping-cart {
+  direction: rtl;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: -105%;
+  width: 25rem;
+  height: 100vh;
+  z-index: 1000;
+  background: $white;
+  transition: all 0.4s linear;
+  padding: 2rem;
+  padding-top: 7rem;
+  overflow-y: scroll;
+
+  &.active {
+    left: 0;
+    box-shadow: $dark-shadow;
+    transition: all 0.4s linear;
+  }
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+  &::-webkit-scrollbar-track {
+    background: $white;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $green;
+    border-radius: 5rem;
+  }
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    position: relative;
+    margin-right: 1rem;
+
+    .fa-times {
+      position: absolute;
+      top: 50%;
+      right: -0.5rem;
+      transform: translateY(-50%);
+      font-size: 1.5rem;
+      color: $light-color;
+      cursor: pointer;
+
+      &:hover {
+        color: $green;
+      }
+    }
+    img {
+      height: 8rem;
+    }
+
+    .content {
+      h3 {
+        color: $green;
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+      }
+      span {
+        font-size: 1.3rem;
+        color: $light-color;
+      }
+      .multiply {
+        margin: 0rem 1rem;
+      }
+    }
+  }
+
+  .total {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: $light-color;
+
+    span {
+      color: $green;
+    }
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
   }
 }

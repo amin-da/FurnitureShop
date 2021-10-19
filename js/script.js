@@ -8,7 +8,19 @@ menuBtn.onclick = () => {
   navbar.classList.toggle("active");
 };
 
+//close button functionality
 closerBtn.onclick = () => {
   closerBtn.style.display = "none";
   navbar.classList.remove("active");
+  cart.classList.remove("active");
+};
+
+//functionality for Shopping Cart
+
+let cart = document.querySelector(".shopping-cart");
+let cartBtn = document.querySelector("#cart-btn");
+
+cartBtn.onclick = () => {
+  closerBtn.style.display = "block";
+  cart.classList.toggle("active");
 };
