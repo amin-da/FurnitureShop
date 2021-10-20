@@ -208,3 +208,61 @@ html {
   .shopping-cart .btn {
     width: 100%;
     text-align: center; }
+
+.login-form {
+  direction: rtl;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -110%;
+  width: 25rem;
+  height: 100vh;
+  z-index: 1000;
+  background: #fff;
+  transition: all 0.4s linear;
+  padding: 2rem; }
+  .login-form.active {
+    left: 0;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.5);
+    transition: all 0.4s linear; }
+  .login-form form {
+    padding: 1.5rem;
+    border: 0.1rem solid #244d4d;
+    border-radius: 1rem; }
+    .login-form form h3 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      color: #244d4d; }
+    .login-form form .box {
+      width: 100%;
+      text-transform: none;
+      font-size: 1.2rem;
+      color: #244d4d;
+      padding: 1rem 1.2rem;
+      border: 0.1rem solid #244d4d;
+      border-radius: 0.5rem;
+      margin: 0.7rem 0rem; }
+    .login-form form .remember {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem; }
+      .login-form form .remember label {
+        cursor: pointer;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        color: #779; }
+    .login-form form .btn {
+      width: 100%;
+      margin: 1rem 0;
+      text-align: center; }
+    .login-form form p {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      color: #779; }
+      .login-form form p a {
+        color: #244d4d; }
+        .login-form form p a:hover {
+          text-decoration: underline; }

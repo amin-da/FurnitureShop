@@ -89,12 +89,12 @@ html {
     i {
       padding-left: 0.2rem;
     }
-    &-image{
+    &-image {
       height: 3rem;
       margin-left: 0.5rem;
     }
   }
-  
+
   .search-form {
     height: 3rem;
     width: 40rem;
@@ -293,5 +293,85 @@ html {
   .btn {
     width: 100%;
     text-align: center;
+  }
+}
+
+// login-form
+
+.login-form {
+  direction: rtl;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: -110%;
+  width: 25rem;
+  height: 100vh;
+  z-index: 1000;
+  background: $white;
+  transition: all 0.4s linear;
+  padding: 2rem;
+
+  &.active {
+    left: 0;
+    box-shadow: $dark-shadow;
+    transition: all 0.4s linear;
+  }
+
+  form {
+    padding: 1.5rem;
+    border: $border;
+    border-radius: 1rem;
+
+    h3 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+      color: $green;
+    }
+
+    .box {
+      width: 100%;
+      text-transform: none;
+      font-size: 1.2rem;
+      color: $green;
+      padding: 1rem 1.2rem;
+      border: $border;
+      border-radius: 0.5rem;
+      margin: 0.7rem 0rem;
+    }
+
+    .remember {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      label {
+        cursor: pointer;
+        padding: 1rem 0;
+        font-size: 1.2rem;
+        color: $light-color;
+      }
+    }
+
+    .btn {
+      width: 100%;
+      margin: 1rem 0;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1rem;
+      padding-top: 1rem;
+      color: $light-color;
+
+      a {
+        color: $green;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 }
