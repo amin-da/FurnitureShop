@@ -55,10 +55,16 @@ html {
   background: #f6fbf6; }
   .header .logo {
     font-size: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #244d4d;
     font-weight: bolder; }
     .header .logo i {
       padding-left: 0.2rem; }
+    .header .logo-image {
+      height: 3rem;
+      margin-left: 0.5rem; }
   .header .search-form {
     height: 3rem;
     width: 40rem;
@@ -102,7 +108,7 @@ html {
   position: fixed;
   cursor: pointer;
   top: 1rem;
-  left: 0.5rem;
+  left: 0.8rem;
   font-size: 2.5rem;
   z-index: 10000;
   color: #244d4d;
