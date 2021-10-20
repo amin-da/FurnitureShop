@@ -266,3 +266,27 @@ html {
         color: #244d4d; }
         .login-form form p a:hover {
           text-decoration: underline; }
+
+@media (max-width: 991px) {
+  html {
+    font-size: 60%; }
+  .header {
+    padding: 1.5rem; } }
+
+@media (max-width: 768px) {
+  #search-btn {
+    display: inline-block; }
+  .header .search-form {
+    position: absolute;
+    top: -110%;
+    left: 0;
+    right: 0;
+    width: 100%; }
+    .header .search-form.active {
+      top: 99%; } }
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%; }
+  .header {
+    padding: 1.5rem; } }

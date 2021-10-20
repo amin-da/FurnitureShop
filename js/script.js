@@ -6,6 +6,7 @@ let navbar = document.querySelector(".navbar");
 menuBtn.onclick = () => {
   closerBtn.style.display = "block";
   navbar.classList.toggle("active");
+  searchForm.classList.remove("active");
 };
 
 //close button functionality
@@ -24,6 +25,7 @@ let cartBtn = document.querySelector("#cart-btn");
 cartBtn.onclick = () => {
   closerBtn.style.display = "block";
   cart.classList.toggle("active");
+  searchForm.classList.remove("active");
 };
 
 //functionality for Login
@@ -33,4 +35,18 @@ let loginBtn = document.querySelector("#login-btn");
 loginBtn.onclick = () => {
   closerBtn.style.display = "block";
   loginForm.classList.toggle("active");
+  searchForm.classList.remove("active");
+};
+
+//functionality for search input in Responsive mode
+
+let searchForm = document.querySelector(".search-form");
+let searchBtn = document.querySelector("#search-btn");
+
+searchBtn.onclick = () => {
+  searchForm.classList.toggle("active");
+};
+
+window.onscroll = () => {
+  searchForm.classList.remove("active");
 };
