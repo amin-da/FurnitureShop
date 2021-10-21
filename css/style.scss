@@ -50,6 +50,10 @@ html {
   }
 }
 
+section {
+  padding: 2rem 5%;
+}
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -376,6 +380,73 @@ html {
   }
 }
 
+//Footer Style
+
+.footer {
+  background: $light-bg;
+  direction: rtl;
+
+  .box-container {
+    @include grid(20rem);
+
+    .box {
+      h3 {
+        font-size: 2rem;
+        color: $green;
+        padding: 1rem 0;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $light-color;
+        padding: 1rem 0;
+      }
+
+      a {
+        font-size: 1.1rem;
+        color: $light-color;
+        padding: 1rem 0;
+        display: block;
+
+        &:hover {
+          color: $green;
+          i {
+            padding-right: 1rem;
+          }
+        }
+
+        i {
+          padding-left: 0.5rem;
+          color: $green;
+        }
+      }
+
+      form input[type="email"]{
+        width: 100%;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+        color: $green;
+        text-transform: none;
+        margin: 0.7rem 0;
+        border: $border;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+}
+
+.credit{
+  text-align: center;
+  font-size: 1.5rem;
+  color: $white;
+  background: $green;
+
+  a{
+    color: $white;
+    padding: 0.3rem;
+  }
+}
+
 // Media queris
 
 @media (max-width: 991px) {
@@ -385,6 +456,9 @@ html {
 
   .header {
     padding: 1.5rem;
+  }
+  section {
+    padding: 2rem;
   }
 }
 

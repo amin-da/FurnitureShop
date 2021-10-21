@@ -29,6 +29,9 @@ html {
     background: #244d4d;
     border-radius: 5rem; }
 
+section {
+  padding: 2rem 5%; }
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -267,11 +270,59 @@ html {
         .login-form form p a:hover {
           text-decoration: underline; }
 
+.footer {
+  background: #f6fbf6;
+  direction: rtl; }
+  .footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem; }
+    .footer .box-container .box h3 {
+      font-size: 2rem;
+      color: #244d4d;
+      padding: 1rem 0; }
+    .footer .box-container .box p {
+      font-size: 1.2rem;
+      color: #779;
+      padding: 1rem 0; }
+    .footer .box-container .box a {
+      font-size: 1.1rem;
+      color: #779;
+      padding: 1rem 0;
+      display: block; }
+      .footer .box-container .box a:hover {
+        color: #244d4d; }
+        .footer .box-container .box a:hover i {
+          padding-right: 1rem; }
+      .footer .box-container .box a i {
+        padding-left: 0.5rem;
+        color: #244d4d; }
+    .footer .box-container .box form input[type="email"] {
+      width: 100%;
+      font-size: 1.2rem;
+      padding: 0.7rem;
+      color: #244d4d;
+      text-transform: none;
+      margin: 0.7rem 0;
+      border: 0.1rem solid #244d4d;
+      border-radius: 0.3rem; }
+
+.credit {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+  background: #244d4d; }
+  .credit a {
+    color: #fff;
+    padding: 0.3rem; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
   .header {
-    padding: 1.5rem; } }
+    padding: 1.5rem; }
+  section {
+    padding: 2rem; } }
 
 @media (max-width: 768px) {
   #search-btn {
