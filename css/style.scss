@@ -421,7 +421,7 @@ section {
         }
       }
 
-      form input[type="email"]{
+      form input[type="email"] {
         width: 100%;
         font-size: 1.2rem;
         padding: 0.7rem;
@@ -435,15 +435,109 @@ section {
   }
 }
 
-.credit{
+.credit {
   text-align: center;
   font-size: 1.5rem;
   color: $white;
   background: $green;
 
-  a{
+  a {
     color: $white;
     padding: 0.3rem;
+  }
+}
+
+// Home style
+
+@keyframes fadeOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-7rem);
+    opacity: 0;
+  }
+}
+
+.home {
+  position: relative;
+
+  .slides-container .slide {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    display: none;
+
+    &.active {
+      display: flex;
+    }
+
+    .content {
+      flex: 1 1 20rem;
+      direction: rtl;
+      animation: fadeLeft 0.4s linear 0.4s backwards;
+
+      span {
+        font-size: 2.5rem;
+        color: $light-color;
+      }
+
+      h3 {
+        font-size: 3.5rem;
+        color: $green;
+        padding-top: 0.2rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        color: $light-color;
+        padding: 0.2rem 0;
+        line-height: 1.5rem;
+      }
+    }
+
+    .image {
+      flex: 1 1 20rem;
+
+      img {
+        width: 100%;
+        animation: fadeOut 0.4s linear;
+      }
+    }
+  }
+
+  #slide-next,
+  #slide-prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 3rem;
+    text-align: center;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 0.3rem;
+
+    &:hover {
+      color: $white;
+      box-shadow: $box-shadow;
+      background: $green;
+      border: $border;
+    }
+  }
+
+  #slide-next {
+    right: 1rem;
+  }
+  #slide-prev {
+    left: 1rem;
   }
 }
 
@@ -459,6 +553,16 @@ section {
   }
   section {
     padding: 2rem;
+  }
+
+  .home #slide-next,
+  .home #slide-prev {
+    top: 97%;
+  }
+
+  .home #slide-prev {
+    left: auto;
+    right: 8rem;
   }
 }
 
