@@ -66,3 +66,6 @@ function prevSlide() {
   index = (index - 1 + slides.length) % slides.length;
   slides[index].classList.add("active");
 }
+
+setInterval(nextSlide, 4000);
+setInterval(prevSlide, 8000);
