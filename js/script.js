@@ -67,5 +67,5 @@ function prevSlide() {
   slides[index].classList.add("active");
 }
 
-setInterval(nextSlide, 4000);
-setInterval(prevSlide, 8000);
+setInterval(nextSlide, 2500);
+setInterval(prevSlide, 5000);

@@ -381,7 +381,6 @@ section {
 }
 
 //Footer Style
-
 .footer {
   background: $light-bg;
   direction: rtl;
@@ -448,7 +447,6 @@ section {
 }
 
 // Home style
-
 @keyframes fadeOut {
   0% {
     transform: scale(0.5);
@@ -538,6 +536,51 @@ section {
   }
   #slide-prev {
     left: 1rem;
+  }
+}
+
+// Home Banner style
+
+.banner-container {
+  @include grid(25rem);
+
+  .banner {
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: center;
+    }
+
+    &:hover img {
+      transform: scale(1.15);
+    }
+
+    .content {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%);
+
+      span {
+        font-size: 1.3rem;
+        color: $light-color;
+      }
+
+      h3 {
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        color: $green;
+      }
+
+      .btn {
+        padding: 0.7rem 1rem;
+      }
+    }
   }
 }
 

@@ -381,6 +381,36 @@ section {
   .home #slide-prev {
     left: 1rem; }
 
+.banner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; }
+  .banner-container .banner {
+    height: 20rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer; }
+    .banner-container .banner img {
+      height: 100%;
+      width: 100%;
+      object-fit: center; }
+    .banner-container .banner:hover img {
+      transform: scale(1.15); }
+    .banner-container .banner .content {
+      position: absolute;
+      top: 50%;
+      left: 1rem;
+      transform: translateY(-50%); }
+      .banner-container .banner .content span {
+        font-size: 1.3rem;
+        color: #779; }
+      .banner-container .banner .content h3 {
+        padding-top: 0.5rem;
+        font-size: 1.5rem;
+        color: #244d4d; }
+      .banner-container .banner .content .btn {
+        padding: 0.7rem 1rem; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
