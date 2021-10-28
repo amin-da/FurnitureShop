@@ -32,6 +32,46 @@ html {
 section {
   padding: 2rem 5%; }
 
+.heading {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 0;
+  background: #244d4d; }
+  .heading h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: #fff;
+    margin-right: 2rem; }
+  .heading p {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 2rem; }
+    .heading p span {
+      color: yellow; }
+    .heading p a {
+      color: #fff; }
+      .heading p a:hover {
+        color: yellow; }
+
+.title {
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  border-bottom: 0.1rem solid #244d4d;
+  padding-bottom: 1rem; }
+  .title span {
+    font-size: 2rem;
+    color: #244d4d; }
+  .title a {
+    font-size: 1.2rem;
+    color: #779; }
+    .title a:hover {
+      color: #244d4d; }
+
 .btn {
   display: inline-block;
   margin-top: 1rem;
@@ -315,6 +355,8 @@ section {
   .credit a {
     color: #fff;
     padding: 0.3rem; }
+    .credit a:hover {
+      color: yellow; }
 
 @keyframes fadeOut {
   0% {
@@ -411,6 +453,94 @@ section {
       .banner-container .banner .content .btn {
         padding: 0.7rem 1rem; }
 
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  direction: rtl; }
+  .category .box-container .box {
+    padding: 2rem;
+    border: 0.1rem solid #244d4d;
+    text-align: center;
+    border-radius: 0.3rem; }
+    .category .box-container .box:hover {
+      background: #244d4d; }
+      .category .box-container .box:hover img {
+        filter: invert(1); }
+      .category .box-container .box:hover h3 {
+        color: #fff; }
+    .category .box-container .box img {
+      height: 6rem;
+      margin-bottom: 1rem; }
+    .category .box-container .box h3 {
+      font-size: 1.5rem;
+      color: #244d4d; }
+
+.products .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; }
+  .products .box-container .box {
+    position: relative;
+    background: #f2f2f2;
+    overflow: hidden;
+    border-radius: 0.7rem; }
+    .products .box-container .box:hover .image img {
+      transform: scale(1.15); }
+    .products .box-container .box:hover .icons {
+      top: 0; }
+    .products .box-container .box .icons {
+      position: absolute;
+      top: -105%;
+      left: 0;
+      height: 20rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: rgba(242, 242, 242, 0.7);
+      z-index: 10;
+      transition: all 0.3s linear; }
+      .products .box-container .box .icons a {
+        text-align: center;
+        width: 5rem;
+        height: 5rem;
+        line-height: 5rem;
+        background: #fff;
+        color: #244d4d;
+        font-size: 1.5rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        border-radius: 50%; }
+        .products .box-container .box .icons a:hover {
+          background: #244d4d;
+          color: #fff; }
+    .products .box-container .box .image {
+      cursor: pointer;
+      height: 20rem;
+      width: 100%;
+      overflow: hidden; }
+      .products .box-container .box .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .products .box-container .box .content {
+      direction: rtl;
+      padding: 1.5rem 2rem; }
+      .products .box-container .box .content .price {
+        font-size: 1.5rem;
+        color: #779; }
+      .products .box-container .box .content h3 {
+        font-size: 1.8rem;
+        color: #244d4d;
+        padding: 0.5rem 0; }
+      .products .box-container .box .content .stars {
+        font-size: 1.5rem; }
+        .products .box-container .box .content .stars i {
+          color: gold; }
+        .products .box-container .box .content .stars span {
+          color: #779; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
@@ -441,4 +571,9 @@ section {
   html {
     font-size: 50%; }
   .header {
-    padding: 1.5rem; } }
+    padding: 1.5rem; }
+  .heading {
+    flex-flow: column;
+    gap: 1rem; }
+    .heading p {
+      margin-left: -2rem; } }
