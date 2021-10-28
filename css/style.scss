@@ -774,6 +774,77 @@ section {
   }
 }
 
+// ********************** about Page ***************************
+
+.about{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+
+  .image{
+    flex: 1 1 35rem;
+
+    img{
+      width: 100%;
+    }
+  }
+
+  .content{
+    flex: 1 1 35rem;
+    direction: rtl;
+
+    span{
+      font-size: 2rem;
+      color: $light-color;
+    }
+
+    h3{
+      font-size: 2.5rem;
+      color: $green;
+      padding-top: 1rem;
+    }
+
+    
+    p{
+      font-size: 1.2rem;
+      color: $light-color;
+      padding: 1rem 0;
+      line-height: 2;
+    }
+  }
+}
+
+.services .box-container{
+  direction: rtl;
+  @include grid(25rem);
+
+  .box{
+    padding: 2rem;
+    text-align: center;
+    border: $border;
+    border-radius: 0.3rem;
+
+    img{
+      height: 8rem;
+      margin-bottom: 1rem;
+    }
+
+    h3{
+      font-size: 1.5rem;
+      color: $green;
+    }
+
+    p{
+      font-size: 1.2rem;
+      color: $light-color;
+      line-height: 2;
+      padding: 1rem 0;
+    }
+  }
+}
+
+
 // Media queris
 
 @media (max-width: 991px) {

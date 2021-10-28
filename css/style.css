@@ -541,6 +541,53 @@ section {
         .products .box-container .box .content .stars span {
           color: #779; }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem; }
+  .about .image {
+    flex: 1 1 35rem; }
+    .about .image img {
+      width: 100%; }
+  .about .content {
+    flex: 1 1 35rem;
+    direction: rtl; }
+    .about .content span {
+      font-size: 2rem;
+      color: #779; }
+    .about .content h3 {
+      font-size: 2.5rem;
+      color: #244d4d;
+      padding-top: 1rem; }
+    .about .content p {
+      font-size: 1.2rem;
+      color: #779;
+      padding: 1rem 0;
+      line-height: 2; }
+
+.services .box-container {
+  direction: rtl;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; }
+  .services .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border: 0.1rem solid #244d4d;
+    border-radius: 0.3rem; }
+    .services .box-container .box img {
+      height: 8rem;
+      margin-bottom: 1rem; }
+    .services .box-container .box h3 {
+      font-size: 1.5rem;
+      color: #244d4d; }
+    .services .box-container .box p {
+      font-size: 1.2rem;
+      color: #779;
+      line-height: 2;
+      padding: 1rem 0; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
