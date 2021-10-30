@@ -932,6 +932,84 @@ section {
 
 }
 
+// ********************** blog Page ***************************
+
+.blog .box-container{
+
+  @include grid(25rem);
+
+  .box{
+    border:$border;
+    background: $light-bg;
+    box-shadow: $box-shadow;
+    transition: all 0.15s linear;
+    cursor: pointer;
+    border-radius: 0.3rem;
+
+    &:hover {
+        transform: scale(.98);
+        transition: all 0.2s linear;
+
+        .icons a{
+          color: $green;
+        }
+    }
+
+    .image{
+      height: 20rem;
+      width: 100%;
+      overflow: hidden;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content{
+      padding: 1rem 0.5rem;
+      direction: rtl;
+      width: 100%;
+
+      h3{
+        color: $green;
+        font-size: 1.8rem;
+      }
+
+      p{
+        color: $light-color;
+        font-size: 1.4rem;
+        line-height: 1;
+        padding: 1rem 0;
+      }
+    }
+
+    .icons{
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: $border;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      a{
+        font-size: 1.2rem;
+        color: $light-color;
+        padding-right: .5rem;
+
+        &:hover{
+        }
+      }
+
+      i{
+        color: $green;
+      }
+    }
+  }
+}
+
+
 // Media queris
 
 @media (max-width: 991px) {

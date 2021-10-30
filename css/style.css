@@ -649,6 +649,56 @@ section {
         font-size: 1.4rem;
         color: #779; }
 
+.blog .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; }
+  .blog .box-container .box {
+    border: 0.1rem solid #244d4d;
+    background: #f6fbf6;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: all 0.15s linear;
+    cursor: pointer;
+    border-radius: 0.3rem; }
+    .blog .box-container .box:hover {
+      transform: scale(0.98);
+      transition: all 0.2s linear; }
+      .blog .box-container .box:hover .icons a {
+        color: #244d4d; }
+    .blog .box-container .box .image {
+      height: 20rem;
+      width: 100%;
+      overflow: hidden; }
+      .blog .box-container .box .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .blog .box-container .box .content {
+      padding: 1rem 0.5rem;
+      direction: rtl;
+      width: 100%; }
+      .blog .box-container .box .content h3 {
+        color: #244d4d;
+        font-size: 1.8rem; }
+      .blog .box-container .box .content p {
+        color: #779;
+        font-size: 1.4rem;
+        line-height: 1;
+        padding: 1rem 0; }
+    .blog .box-container .box .icons {
+      margin-top: 1.5rem;
+      padding-top: 1rem;
+      border-top: 0.1rem solid #244d4d;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .blog .box-container .box .icons a {
+        font-size: 1.2rem;
+        color: #779;
+        padding-right: .5rem; }
+      .blog .box-container .box .icons i {
+        color: #244d4d; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
