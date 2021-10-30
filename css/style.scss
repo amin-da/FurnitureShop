@@ -844,6 +844,93 @@ section {
   }
 }
 
+// ********************** team Page ***************************
+
+.team .box-container{
+  @include grid(25rem);
+
+  .box{
+    position: relative;
+    overflow: hidden;
+    border: $border;
+    box-shadow: $box-shadow;
+    background: $light-bg;
+    cursor: pointer;
+
+    &:hover {
+
+      .image img{
+        transform: scale(1.08);
+      }
+      .share{
+        left: 0;
+      }
+    }
+
+    .share{
+      width: 7rem;
+      height: 40rem;
+      position: absolute;
+      top: 0;
+      left: -7rem;
+      z-index: 10;
+      background: $green;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+
+      a{
+        height:4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        color: $white;
+        cursor: pointer;
+        border: 1px solid $white;
+        border-radius: 0.3rem;
+        text-align:center;
+
+        &:hover{
+          background: $white;
+          color: $green;
+        }
+      }
+    }
+
+    .image{
+      height: 40rem;
+      width: 100%;
+      overflow: hidden;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+    }
+
+    .user{
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3{
+        font-size: 1.7rem;
+        color: $green;
+      }
+
+      span{
+        font-size: 1.4rem;
+        color: $light-color;
+      }
+    }
+  }
+
+}
 
 // Media queris
 

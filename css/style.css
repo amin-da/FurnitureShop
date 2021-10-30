@@ -588,6 +588,67 @@ section {
       line-height: 2;
       padding: 1rem 0; }
 
+.team .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1rem; }
+  .team .box-container .box {
+    position: relative;
+    overflow: hidden;
+    border: 0.1rem solid #244d4d;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    background: #f6fbf6;
+    cursor: pointer; }
+    .team .box-container .box:hover .image img {
+      transform: scale(1.08); }
+    .team .box-container .box:hover .share {
+      left: 0; }
+    .team .box-container .box .share {
+      width: 7rem;
+      height: 40rem;
+      position: absolute;
+      top: 0;
+      left: -7rem;
+      z-index: 10;
+      background: #244d4d;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem; }
+      .team .box-container .box .share a {
+        height: 4rem;
+        width: 4rem;
+        line-height: 4rem;
+        font-size: 2rem;
+        color: #fff;
+        cursor: pointer;
+        border: 1px solid #fff;
+        border-radius: 0.3rem;
+        text-align: center; }
+        .team .box-container .box .share a:hover {
+          background: #fff;
+          color: #244d4d; }
+    .team .box-container .box .image {
+      height: 40rem;
+      width: 100%;
+      overflow: hidden; }
+      .team .box-container .box .image img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+    .team .box-container .box .user {
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .team .box-container .box .user h3 {
+        font-size: 1.7rem;
+        color: #244d4d; }
+      .team .box-container .box .user span {
+        font-size: 1.4rem;
+        color: #779; }
+
 @media (max-width: 991px) {
   html {
     font-size: 60%; }
