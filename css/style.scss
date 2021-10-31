@@ -997,9 +997,6 @@ section {
         font-size: 1.2rem;
         color: $light-color;
         padding-right: .5rem;
-
-        &:hover{
-        }
       }
 
       i{
@@ -1009,6 +1006,58 @@ section {
   }
 }
 
+// ********************** contact Page ***************************
+
+.contact{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0rem;
+  direction: rtl;
+
+  form{
+    padding: 2rem;
+    background: $light-bg;
+    flex: 1 1 30rem;
+
+    h3{
+      font-size: 2.5rem;
+      padding-bottom: 1rem;
+      color: $green;
+    }
+
+    span{
+      display: block;
+      padding: 0 0 0.5rem 0;
+      color: $light-color;
+      font-size: 1.4rem;
+    }
+
+    .box{
+      width: 100%;
+      border-bottom: $border;
+      background: none;
+      font-size: 1.4rem;
+      color: $green;
+      text-transform: none;
+      padding: 0.5rem 0rem;
+      margin-bottom: 1rem; 
+    }
+
+    .email{
+      direction: ltr;
+    }
+
+    textarea{
+      height: 15rem;
+      resize: none;
+    }
+  }
+
+  .map{
+    flex: 1 1 30rem;
+    width: 100%;
+  }
+}
 
 // Media queris
 
