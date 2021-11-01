@@ -16,6 +16,8 @@ $border: 0.1rem solid $green;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* basic style */
@@ -937,14 +939,26 @@ section {
 .blog .box-container{
 
   @include grid(25rem);
+  // display: flex;
+  // align-items: center;
+  // flex-wrap: wrap;
+  // justify-content: center;
+  direction: rtl;
+
 
   .box{
+    // width: 25rem;
+    // height: 40rem;
+    // margin: 1rem;
     border:$border;
     background: $light-bg;
     box-shadow: $box-shadow;
     transition: all 0.15s linear;
     cursor: pointer;
     border-radius: 0.3rem;
+
+ 
+    
 
     &:hover {
         transform: scale(.98);

@@ -316,7 +316,9 @@ section {
   .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem; }
+    gap: 1rem;
+    align-items: center;
+    justify-content: center; }
     .footer .box-container .box h3 {
       font-size: 2rem;
       color: #244d4d;
@@ -426,7 +428,9 @@ section {
 .banner-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; }
   .banner-container .banner {
     height: 20rem;
     position: relative;
@@ -457,6 +461,8 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
   gap: 1rem;
+  align-items: center;
+  justify-content: center;
   direction: rtl; }
   .category .box-container .box {
     padding: 2rem;
@@ -479,7 +485,9 @@ section {
 .products .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; }
   .products .box-container .box {
     position: relative;
     background: #f2f2f2;
@@ -570,7 +578,9 @@ section {
   direction: rtl;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; }
   .services .box-container .box {
     padding: 2rem;
     text-align: center;
@@ -591,7 +601,9 @@ section {
 .team .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+  align-items: center;
+  justify-content: center; }
   .team .box-container .box {
     position: relative;
     overflow: hidden;
@@ -652,7 +664,10 @@ section {
 .blog .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 1rem; }
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  direction: rtl; }
   .blog .box-container .box {
     border: 0.1rem solid #244d4d;
     background: #f6fbf6;
