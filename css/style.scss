@@ -446,7 +446,10 @@ section {
   direction: rtl;
 
   .box-container {
-    @include grid(20rem);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1rem;
+   
 
     .box {
       h3 {

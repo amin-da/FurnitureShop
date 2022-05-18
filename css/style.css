@@ -316,9 +316,7 @@ section {
   .footer .box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    gap: 1rem;
-    align-items: center;
-    justify-content: center; }
+    gap: 1rem; }
     .footer .box-container .box h3 {
       font-size: 2rem;
       color: #244d4d;
